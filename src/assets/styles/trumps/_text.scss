@@ -1,0 +1,11 @@
+.f-size-12 {
+  @include rem(font-size, 12px);
+}
+
+.f-size-13 {
+  @include rem(font-size, 13px);
+}
+
+.f-size-14 {
+  @include rem(font-size, 14px);
+}

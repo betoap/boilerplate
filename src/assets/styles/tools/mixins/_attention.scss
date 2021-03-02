@@ -1,0 +1,9 @@
+// Apply ‘attention’ styles in one go.
+
+@mixin attention() {
+  &:hover,
+  &:active,
+  &:focus {
+    @content;
+  }
+}

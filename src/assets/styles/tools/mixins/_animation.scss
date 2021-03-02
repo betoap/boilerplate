@@ -1,0 +1,169 @@
+@mixin animation-duration( $time: $animation-time-default ) {
+  -webkit-animation-duration: $time;
+    -moz-animation-duration:  $time;
+    -ms-animation-duration:   $time;
+    -o-animation-duration:    $time;
+    animation-duration:       $time;
+}
+
+@mixin animation-mode( $mode: $animation-mode-default  ) {
+  -webkit-animation-fill-mode: $mode !important;
+  -moz-animation-fill-mode: $mode !important;
+  -o-animation-fill-mode: $mode !important;
+  -ms-animation-fill-mode: $mode !important;
+  animation-fill-mode:  $mode !important;
+}
+
+@mixin animation-name( $name: $animation-name-default ) {
+  -webkit-animation-name: $name !important;
+  -moz-animation-name: $name !important;
+  -o-animation-name: $name !important;
+  -ms-animation-name: $name !important;
+  animation-name:  $name !important;
+}
+
+@mixin animation-iteration-count( $times: $animation-iteration-count-default ) {
+  -webkit-animation-iteration-count: $times !important;
+  -moz-animation-iteration-count: $times !important;
+  -o-animation-iteration-count: $times !important;
+  -ms-animation-iteration-count: $times !important;
+  animation-iteration-count: $times;
+}
+
+@mixin animation-direction( $direction: $animation-direction-default ) {
+  -webkit-animation-direction: $direction !important;
+  -moz-animation-direction: $direction !important;
+  -o-animation-direction: $direction !important;
+  -ms-animation-direction: $direction !important;
+  animation-direction: $direction;
+}
+
+
+
+
+@mixin animation-keyframe ($name: $animation-name-default) {
+  @-webkit-keyframes #{$name} {
+      @content;
+  }
+
+  @-moz-keyframes #{$name} {
+      @content;
+  }
+
+  @-o-keyframes #{$name} {
+      @content;
+  }
+
+  @-ms-keyframes #{$name} {
+      @content;
+  }
+
+  @keyframes #{$name} {
+      @content;
+  }
+}
+
+@mixin animation (
+  $delay: $animation-delay-default,
+  $duration: $animation-duration-default,
+  $name: $animation-name-default) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $name;
+  -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $name;
+  -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-name: $name;
+  -o-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $name;
+  animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+@mixin delay ( $delay ) {
+  -webkit-animation-delay: $delay !important;
+  -moz-animation-delay: $delay !important;
+  -o-animation-delay: $delay !important;
+  animation-delay: $delay !important;
+}
+
+@mixin  animation-transform-origin ( $positions: $animation-transform-origin-default ) {
+  -webkit-transform-origin:$positions;
+    -moz-transform-origin:$positions;
+    -o-transform-origin:$positions;
+    -ms-transform-origin: $positions;
+    transform-origin:$positions;
+}
+
+@mixin animations($animate...) {
+  $max: length($animate);
+  $animations: '';
+
+  @for $i from 1 through $max {
+      $animations: #{$animations + nth($animate, $i)};
+
+      @if $i < $max {
+          $animations: #{$animations + ", "};
+      }
+  }
+  -webkit-animation: $animations;
+  -moz-animation:    $animations;
+  -o-animation:      $animations;
+  -ms-animation:      $animations;
+  animation:         $animations;
+}
+
+@mixin animation-timing-function ( $animation ) {
+  -moz-animation-timing-function: $animation;
+  -o-animation-timing-function: $animation;
+  -ms-animation-timing-function: $animation;
+  -webkit-animation-timing-function: $animation;
+  animation-timing-function: $animation;
+}
+
+// generic transform
+@mixin animation-transform($transforms) {
+  -moz-transform: $transforms;
+    -o-transform: $transforms;
+   -ms-transform: $transforms;
+   -webkit-transform: $transforms;
+       transform: $transforms;
+}
+
+// rotate
+@mixin animation-rotate ($deg) {
+  @include animation-transform(rotate(#{$deg}deg));
+}
+
+// scale
+@mixin animation-scale($scale) {
+	 @include animation-transform(scale($scale));
+}
+// translate
+@mixin animation-translate ($x: 0, $y: 0) {
+   @include animation-transform(translate($x, $y));
+}
+// translateX
+@mixin animation-translateX ($x) {
+  @include animation-transform(translateX($x));
+}
+// translateY
+@mixin animation-translateY ($y) {
+  @include animation-transform(translateY($y));
+}
+// skew
+@mixin animation-skew ($x: 0, $y: 0) {
+   @include animation-transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin backface-visibility( $state: visible ) {
+  @include animation-transform( translateY($state) );
+}

@@ -1,0 +1,34 @@
+@import './../../../assets/styles/tools/__all';
+:host {
+    .list {
+        padding: 0px;
+        margin: 0px;
+    }
+    .list--wrapper {
+        padding: 0px;
+        margin: 0px;
+    }
+    a {
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        color: $color-black-35;
+        @include rem(padding-bottom, 38px);
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 500;
+        &:hover {
+          color: $btn-primary-bg-active;
+        }
+        &.active {
+          color: $btn-primary-bg-active;
+          font-size: 16px;
+        }
+    }
+    .control-label {
+        font-weight: 600;
+        color: rgba(0, 0, 0, 1);
+        display: block;
+        padding-bottom: 16px;
+    }
+}

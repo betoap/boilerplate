@@ -1,0 +1,10 @@
+.dh-label {
+  @include rem(font-size, 11px);
+  @include rem(padding, 5px, 8px);
+  display: inline-block;
+  background-color: $color-error;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $color-white;
+  border-radius: $base-radius;
+}

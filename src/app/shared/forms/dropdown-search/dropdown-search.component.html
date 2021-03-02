@@ -1,0 +1,17 @@
+<am-standard-selectbox
+  (changeItem)="onChangeState($event)"
+  [items]="researchedList$ | async"
+  [label]="label"
+  [control]="control"
+  [setCurrent]="setCurrent"
+  classeCss="minor-input"
+  selectType="form">
+  <div class="input-search-box">
+    <input
+      class="form-control fields__input"
+      type="text"
+      placeholder="Buscar"
+      (input)="getInputValue($event)"
+    />
+  </div>
+</am-standard-selectbox>

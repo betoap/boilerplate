@@ -9,7 +9,7 @@ export class Coroutine {
             return v.toString(16);
         });
     }
-    
+
     private static method: Dictionary<any, any> = new Dictionary();
 
     static StartCoroutine(iterator: Iterator<any>, nextValue?:any): any {
@@ -58,47 +58,3 @@ export class Coroutine {
         };
     }
 }
-
-
-const delay = (ms: any, result: any) => {
-    return new Promise(
-        resolve => setTimeout(
-            () => resolve(result), ms)
-        );
-}
-
-
-import fetch from 'node-fetch';
-const data: any = {
-    method: 'GET',
-    mode: 'cors',
-    'headers': {
-      'Content-Type': 'application/json',
-      'Accept': 'application/json'
-    }
-}
-const d = Coroutine.StartCoroutine(delays(100));
-function * delays(x: any) {
-    const url = `https://viacep.com.br/ws/06900000/json`;
-    let w = yield fetch(url, data);
-    let j = yield w.json();
-    console.log(j);
-    Coroutine.StopAllCoroutine( );
-    let a = yield delay(800 + x, "Hello, I'm an");
-    console.log( a );
-    let b = yield delay(100 + x , "async coroutine!");
-    console.log( b );
-    const c = yield delay(100 + x, "async coroutine finish!!!!");
-    console.log( c );
-    const o = yield {a: 123, b: 456 };
-    console.log( o );
-    return yield x;
-}
-
-// call it
-// const c = new Coroutine();
-// const c = Coroutine.StartCoroutine(delays(100));
-
-console.log( d );
-// console.log( '---------------' );
-// console.log( d );

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="224px" viewBox="0 0 224 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>@2xIcon / Small</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(0.000000, -526.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="800" height="1519"></rect>
+            <g id="Icon-/-Service" transform="translate(100.000000, 626.000000)">
+                <g id="icon-/-small">
+                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="24" height="24"></rect>
+                    <g id="delivery-fast-outline-16-copy" transform="translate(6.000000, 6.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline id="Shape" points="8.625 10.125 11.625 10.125 11.625 5.25 9 4.5 7.5 0.375 0.375 0.375 0.375 10.125 1.875 10.125"></polyline>
+                        <circle id="Oval" cx="5.25" cy="9.75" r="1.875"></circle>
+                        <polyline id="Shape" points="4.125 1.875 4.125 4.875 7.125 4.875"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

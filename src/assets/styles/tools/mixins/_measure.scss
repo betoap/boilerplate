@@ -1,0 +1,27 @@
+// Reference https://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+
+@import './../../settings/__all';
+
+@mixin font-size($sizeValue: '16px'){
+	font-size: $sizeValue;
+	font-size: $sizeValue / $font-size-base + rem;
+}
+
+@mixin rem($property, $values...) {
+  $max: length($values);
+  $pxValues: '';
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: strip-unit(nth($values, $i));
+    $pxValues: #{$pxValues + $value}px;
+    $remValues: #{$remValues + $value / $font-size-base-num}rem;
+    @if $i < $max {
+      $pxValues: #{$pxValues + " "};
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $pxValues;
+  #{$property}: $remValues;
+}

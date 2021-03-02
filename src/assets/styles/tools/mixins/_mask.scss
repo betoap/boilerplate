@@ -1,0 +1,23 @@
+@mixin mask( $img ) {
+  -webkit-mask: url($img);
+  -moz-mask: url($img);
+  -o-mask: url($img);
+  -ms-mask: url($img);
+  mask:  url($img);
+}
+
+@mixin mask-repeat( $repeat: $mask-image-repeat ) {
+  -webkit-mask-repeat: $repeat;
+  -moz-mask-repeat: $repeat;
+  -o-mask-repeat: $repeat;
+  -ms-mask-repeat: $repeat;
+  mask-repeat: $repeat;
+}
+
+@mixin mask-position( $postionX: $mask-positionX, $positionY: $mask-positionY ) {
+  -webkit-mask-position: $postionX $positionY;
+  -moz-mask-position: $postionX $positionY;
+  -o-mask-position: $postionX $positionY;
+  -ms-mask-position: $postionX $positionY;
+  mask-position: $postionX $positionY;
+}

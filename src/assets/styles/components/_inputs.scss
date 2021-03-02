@@ -1,0 +1,104 @@
+/*------------------------------------*\
+  Components > Inputs
+\*------------------------------------*/
+
+$input-border: #cbcbcb;
+$input-border-focused: #999;
+
+// FIELDS
+.fields {
+  position: relative;
+
+  &__input, &__select {
+    outline: none;
+    appearance: none;
+    border: none;
+    @include rem(padding, 6px);
+  }
+
+  // remove botão do input select no IE
+  &__select::-ms-expand {
+    display: none;
+  }
+
+  &__option {
+    direction: ltr;
+  }
+
+  &__content:not(.readonly) {
+    display: flex;
+    flex-direction: row;
+
+    &:focus-within {
+    }
+  }
+
+  .readonly {
+    height: 2rem;
+  }
+
+  &__searchbar{
+    position: relative;
+
+    &__line{
+      position: relative;
+      width: 10%;
+    }//
+  }
+
+}
+// FIELDS - //
+
+// INPUT DEFAULT
+.minor-input {
+  &__dropbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    float: left;
+    &:focus-within {
+    }
+  }
+
+  &__select {
+    padding-right: 24px;
+  }
+
+  &__optionList {
+    box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 8px 0 rgba(0, 0, 0, 0.13);
+    position: absolute;
+
+    z-index: 99;
+
+    &__ul {
+      margin: 0;
+      background-color: #FFFFFF;
+      @include rem(max-height, 196px);
+      text-align: left;
+    }
+
+    &__li {
+      @include rem(padding, 6px);
+      @include rem(font-size, 16px);
+      height: auto;
+      color: $color-grey;
+      cursor: pointer;
+      transition: $global-transition;
+      &:hover {
+        background-color: $color-athens-gray;
+      }
+    }
+
+  }
+
+}
+.input-default {
+  &__input, &__select {
+    @include rem(font-size, 24px);
+    @include rem(height, 48px);
+  }
+}
+// INPUT DEFAULT

@@ -1,0 +1,48 @@
+@import '../tools/__all';
+
+.carousel {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  .content{
+    @include rem(min-height, 50px);
+    overflow: hidden;
+    ul{
+      position: absolute;
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      li{
+        position: absolute;
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+
+  footer{
+    ul{
+      border: 0;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      li{
+        @include rem(width, 12px);
+        @include rem(height, 12px);
+        @include rem(margin, 0, 3px);
+        @include border-radius(50%);
+        display: inline-block;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0.1);
+        &.__active{
+          background-color: #9E0616;
+        }
+      }
+    }
+  }
+}

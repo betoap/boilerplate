@@ -1,0 +1,67 @@
+@import '../../../assets/styles/component.scss';
+
+:host {
+  width: 100%;
+
+  svg-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  ::ng-deep svg {
+    width: inherit;
+    height: inherit;
+
+    * {
+      color: $color-orange;
+      stroke: $color-orange;
+    }
+  }
+}
+
+.wb-container {
+  @include rem(padding-top, 15px);
+  @include rem(padding-right, 20px);
+  @include rem(padding-bottom, 15px);
+  background-color: $color-gallery;
+  border-radius: 6px;
+}
+
+.warning{
+  background-color: $color-warning !important;
+  color: white !important;
+  ::ng-deep svg {
+    * {
+      color: white;
+      stroke: white;
+    }
+  }
+}
+
+.success {
+  background-color: $color-success !important;
+  color: white !important;
+  ::ng-deep svg {
+    * {
+      color: white;
+      stroke: white;
+    }
+  }
+}
+
+.danger{
+  background-color: $color-error !important;
+  color: white !important;
+  ::ng-deep svg {
+    * {
+      color: white;
+      stroke: white;
+    }
+  }
+}
+
+.wb-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

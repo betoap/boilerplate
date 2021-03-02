@@ -1,0 +1,24 @@
+.modal-tooltip {
+  position: relative;
+  z-index: 999999;
+}
+
+.modal-tooltip__shadow {
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-tooltip__container {
+  @include rem(padding, 20px);
+  @include rem(min-width, 250px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background-color: $color-white;
+  border-radius: $base-radius;
+}

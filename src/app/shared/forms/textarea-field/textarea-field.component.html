@@ -1,0 +1,23 @@
+<div class="form-group"
+[ngClass]="{
+  'has-error': hasError
+}">
+    <textarea
+      [cols]="cols"
+      [disabled]="disabled"
+      [id]="id"
+      [attr.maxlength]="maxlength"
+      [name]="name"
+      [placeholder]="placeholder"
+      [readonly]="!!isReadOnly"
+      [required]="required"
+      [rows]="rows"
+      [value]="value"
+      [(ngModel)]="value"
+
+      (focus)="setFocus($event)"
+      (focusout)="unsetFocus($event)"
+      >
+    </textarea>
+  <am-error-msg [control]="control" [label]="label"></am-error-msg>
+</div>

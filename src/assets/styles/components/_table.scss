@@ -1,0 +1,110 @@
+@import '../../styles/component.scss';
+
+.data-table {
+  width: 100%;
+}
+
+tr {
+  @include rem(height, 42px);
+}
+
+.data-table__header {
+  @include rem(font-size, 14px);
+  @include rem(line-height, 19px);
+  font-family: $font-medium;
+	color: $color-black-80;
+  font-weight: normal;
+
+  input {
+    display: block;
+    width: 100%;
+  }
+}
+
+.data-table__filters{
+  @include rem(margin, 0, 5px);
+}
+
+.data-table__col{
+  @include rem(padding, 0, 5px);
+  @include rem(font-size, 12px);
+  text-align: center;
+  color: $color-text;
+
+  * {
+    vertical-align: middle;
+  }
+
+  &:first-child {
+    @include rem(padding-left, 15px);
+  }
+
+  &:last-child {
+    @include rem(padding-right, 15px);
+  }
+
+  &.highlight{
+    font-family: $font-medium;
+    color: $color-error;
+    background-color: transparent;
+  }
+}
+
+.data-table__row{
+  transition: $global-transition;
+
+  &:nth-child(odd) {
+    background-color: $color-white-smoke-lighter;
+    border-radius: 8px;
+  }
+}
+
+
+/** components do ng6-data table **/
+
+.data-table {
+  .pagination-box {
+    width: 320px;
+  }
+
+  .pagination {
+    @include rem(padding-top, 10px);
+    color: $color-black-80;
+    margin: 0;
+    font-family: $font-light;
+
+    > li {
+      @include rem(margin-right, 5px);
+      @include rem(padding, 4px, 10px);
+      @include rem(font-size, 14px);
+      @include rem(line-height, 19px);
+      cursor: pointer;
+      box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+      display: inline-block;
+      transition: $global-transition;
+      border-radius: $base-radius;
+
+      &:hover {
+        background-color: $color-athens-gray;
+      }
+
+      &.active {
+        border: 1px solid $color-black;
+        background-color: $color-black;
+
+        > a {
+          color: $color-white;
+        }
+      }
+
+      > a {
+        color: $color-black-40;
+
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

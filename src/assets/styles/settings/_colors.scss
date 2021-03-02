@@ -1,0 +1,88 @@
+// *----------------------------------*\
+//  Settings > Colors
+// *----------------------------------*/
+
+$gray-nickel: #B5B6B3;
+
+// Colors
+$color-brand: rgba(32, 124, 223, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-text:  rgba(34, 34, 34, 1);
+
+$color-black: rgba(0, 0, 0, 1);
+$color-black-90: rgba(0, 0, 0, 0.9);
+$color-black-80: rgba(0, 0, 0, 0.8);
+$color-black-60: rgba(0, 0, 0, 0.6);
+$color-black-40: rgba(0, 0, 0, 0.4);
+$color-black-50: rgba(0, 0, 0, 0.5);
+$color-black-35: rgba(0, 0, 0, 0.35);
+$color-black-20: rgba(0, 0, 0, 0.2);
+$color-black-12: rgba(0, 0, 0, 0.12);
+$color-black-08: rgba(0, 0, 0, 0.08);
+$color-black-01: rgba(0, 0, 0, 0.01);
+
+$color-black: #000000;
+$color-grey: #666666;
+$color-lighten-grey: #e7e7e7;
+$color-red: #9E0616;
+$color-torch-red: #EE162D;
+$color-tuatara: #3E3E3D;
+$color-athens-gray: #F4F4F5;
+$color-white-smoke: #f1f1f1;
+$color-white-smoke-lighter: #f8f8f8;
+$color-white: #FFFFFF;
+$white: #FFFFFF;
+$blue: #0000FF;
+$green: #00FF00;
+$color-orange: #f4a622;
+$color-gallery: #EBEBEB;
+$color-dim-gray: #d3d3d3;
+
+$color-success: rgba(0, 175, 63, 1);
+$color-warning: rgba(244, 166, 34, 1);
+$color-error: rgba(255, 0, 30, 1);
+$color-info: rgba(49, 112, 144, 1);
+
+$color-card-red:rgba(238, 22, 45, 1);
+
+$color-status-active: $color-success;
+$color-status-inactive: rgba(238, 22, 45, 1);
+$color-status-closed: $color-black-50;
+$color-status-yellow: rgba( 250, 226, 50, 1);
+
+
+// Background Colors
+$bg-color-grey: rgba(246, 246, 246, 1);
+$bg-color-lightgray: lightgray;
+
+// bg hover
+$bg-hover-grey: rgba(244, 244, 244, 1);
+
+$table-even-grey: $bg-hover-grey;
+
+// Border
+$color-border: rgba(236, 240, 241, 1);
+
+
+// Links
+$color-link:        $color-text;
+$color-link-hover:  $color-brand;
+
+// Buttons
+$btn-primary-bg: $color-brand;
+$btn-primary-bg-hover: rgba(111, 0, 12, 1);
+$btn-primary-bg-active: rgba(158, 6, 22, 1);
+$btn-primary-bg-disabled: rgba(0,0,0,0.1);
+
+
+$btn-secondary-bg: $color-white;
+$btn-secondary-bg-hover: $color-black-80;
+$btn-secondary-bg-active: $color-black;
+$btn-secondary-bg-disabled: $color-black-01;
+
+
+// Cards
+$card-header-bg: rgba(0, 0, 51, 1);
+$card-footer-bg: rgba(0, 0, 51, 1);
+
+

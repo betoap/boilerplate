@@ -1,0 +1,33 @@
+@mixin label {
+  @include rem(font-size, 12px);
+  font-family: $font-medium;
+  line-height: 1.2;
+  color: $color-grey;
+  display: block;
+  text-transform: uppercase;
+}
+
+@mixin input {
+  @include rem(font-size, 14px);
+  line-height: 1.2;
+}
+
+@mixin effect-hover {
+  @include rem(width, 34px);
+  @include rem(height, 34px);
+  content: '';
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  transition: $global-transition;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+}
+
+@mixin effect-hovered {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.05);
+}

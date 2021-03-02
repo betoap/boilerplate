@@ -1,0 +1,39 @@
+<div class="form-group fields" [ngClass]="classeCss">
+
+  <div class="fields__content {{ classeCss }}__content {{ readOnly() }}">
+    <input
+      *ngIf="mask"
+      class="form-control fields__input {{ classeCss }}__input"
+      [maxlength]="maxlength"
+      [placeholder]="placeholder"
+      [type]="type"
+      [id]="id"
+      [readonly]="!!isReadOnly"
+      [(ngModel)]="value"
+      [autocomplete]="autocomplete"
+      autofocus="false"
+      (focus)="setFocus($event)"
+    />
+    <input
+      *ngIf="!mask"
+      class="form-control fields__input {{ classeCss }}__input"
+      [maxlength]="maxlength"
+      [placeholder]="placeholder"
+      [type]="type"
+      [id]="id"
+      [readonly]="!!isReadOnly"
+      [(ngModel)]="value"
+      [autocomplete]="autocomplete"
+      (focus)="setFocus($event)"
+    />
+    <span class="iconClass"></span>
+  </div>
+
+  <div class="fields__searchbar">
+    <div class="animated slideLeft infinite alternate hidden">
+      <div class="fields__searchbar__line"></div>
+    </div>
+  </div>
+  <am-error-msg [control]="control" [label]="label" (evtHasError)="evtHasError($event)"></am-error-msg>
+</div>
+

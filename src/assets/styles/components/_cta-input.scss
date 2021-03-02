@@ -1,0 +1,13 @@
+.cta-input {
+  display: flex;
+}
+
+.cta-input__box {
+  flex: 1;
+}
+
+.cta-input__cta-box {
+  @include rem(margin-left, 15px);
+  display: flex;
+  align-items: center;
+}

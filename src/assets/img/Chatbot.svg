@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="229px" height="233px" viewBox="0 0 229 233" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>@2xIcon / User Copy 9</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-571.000000, -644.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="800" height="1519"></rect>
+            <g id="Icon-/-atendimento-chatbot-" transform="translate(672.000000, 745.000000)">
+                <path d="M15.5,0 L15.5,0 C24.0604136,-1.57252247e-15 31,6.93958638 31,15.5 L31,15.5 C31,24.0604136 24.0604136,31 15.5,31 L15.5,31 C6.93958638,31 1.04834831e-15,24.0604136 0,15.5 L0,15.5 C-1.04834831e-15,6.93958638 6.93958638,1.57252247e-15 15.5,0 Z" id="Rectangle-3-Copy-3" stroke="#B5B6B3" fill="#FFFFFF" fill-rule="nonzero"></path>
+                <g id="Group" fill-rule="evenodd" transform="translate(8.000000, 6.000000)">
+                    <g id="robot-glyph-48" transform="translate(0.000000, 5.000000)" fill-rule="nonzero">
+                        <rect id="Rectangle" fill="#00AF3F" x="0" y="0" width="16" height="13" rx="2"></rect>
+                        <ellipse id="Oval" fill="#FFFFFF" cx="4" cy="4.25" rx="1.71428571" ry="1.75"></ellipse>
+                        <path d="M12.0002873,6 C12.9454859,6 13.7142857,5.21472855 13.7142857,4.25 C13.7142857,3.28527145 12.9449113,2.5 12.0002873,2.5 C11.0545141,2.5 10.2857143,3.28527145 10.2857143,4.25 C10.2857143,5.21472855 11.0545141,6 12.0002873,6 Z" id="Path" fill="#FFFFFF"></path>
+                        <path d="M8.00165022,10.6666667 C10.3786215,10.6666667 12.3403983,9.13261935 12.5714286,7.16666667 L3.42857143,7.16666667 C3.66290211,9.13261935 5.62137855,10.6666667 8.00165022,10.6666667 Z" id="Path" fill="#FFFFFF"></path>
+                    </g>
+                    <g id="Group-2" transform="translate(7.000000, 0.000000)" fill-rule="nonzero">
+                        <path d="M1.5,6.188556 L1.5,1.73795374" id="Line-2" stroke="#00AF3F" stroke-width="1.14285714" stroke-linecap="square"></path>
+                        <circle id="Oval" fill="#00AF3F" cx="1.5" cy="1.5" r="1.5"></circle>
+                    </g>
+                </g>
+                <path d="M8.5,18.5 L8.5,14.5 C7.3954305,14.5 6.5,15.3954305 6.5,16.5 C6.5,17.6045695 7.3954305,18.5 8.5,18.5 Z" id="Rectangle" stroke="#00AF3F" fill-rule="nonzero"></path>
+                <path d="M25.5,18.5 L25.5,14.5 C24.3954305,14.5 23.5,15.3954305 23.5,16.5 C23.5,17.6045695 24.3954305,18.5 25.5,18.5 Z" id="Rectangle-Copy" stroke="#00AF3F" fill="#FFFFFF" fill-rule="nonzero" transform="translate(24.500000, 16.500000) scale(-1, 1) translate(-24.500000, -16.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

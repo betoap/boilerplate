@@ -1,0 +1,37 @@
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    @if length($transition) == 0 {
+      transition: $transition-base;
+    } @else {
+      transition: $transition;
+    }
+  }
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}
+
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+     -moz-transform: translate($x, $y);
+      -ms-transform: translate($x, $y); // IE9 only
+       -o-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+@mixin transition-transform($transition...) {
+  -webkit-transition: -webkit-transform $transition;
+     -moz-transition: -moz-transform $transition;
+      -ms-transition: -moz-transform $transition;
+       -o-transition: -o-transform $transition;
+          transition: transform $transition;
+}
+
+@mixin translate3d( $x: 0, $y: 0, $z: 0 ) {
+  -webkit-transform: translate3d( $x, $y, $z );
+     -moz-transform: translate3d( $x, $y, $z );
+      -ms-transform: translate3d( $x, $y, $z );
+       -o-transform: translate3d( $x, $y, $z );
+          transform: translate3d( $x, $y, $z );
+}

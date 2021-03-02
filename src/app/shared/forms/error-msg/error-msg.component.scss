@@ -1,0 +1,12 @@
+@import './../../../../assets/styles/tools/__all';
+
+:host{
+  .alert-danger {
+    font-size: 12px;
+    color: white;
+    font-style: italic;
+    position: absolute;
+    min-height: 40px;
+    z-index: 999;
+  }
+}

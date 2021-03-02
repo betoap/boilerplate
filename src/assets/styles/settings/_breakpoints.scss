@@ -1,0 +1,16 @@
+// *----------------------------------*\
+//  Settings > Breakpoints
+// *----------------------------------*/
+
+// Create or remove breakpoints for your project
+// Syntax:
+// name SIZErem,
+$flexboxgrid-breakpoints:
+  sm 48em 46rem,
+  md 62em 61rem,
+  lg 75em 71rem !default;
+$flexboxgrid-max-width: 100% !default;
+
+$old-desktop: 1365px;
+
+$only-old-desktop: only screen and (max-width: $old-desktop);

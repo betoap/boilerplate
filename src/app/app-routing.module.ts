@@ -1,10 +1,20 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule, ExtraOptions } from '@angular/router';
 
-const routes: Routes = [];
+const routerOptions: ExtraOptions = {
+  useHash: false,
+  anchorScrolling: 'disabled',
+  scrollPositionRestoration: 'top',
+  enableTracing: false,
+};
+
+const routes: Routes = [
+  // { path: 'admin', loadChildren: () => import( './modules/admin/admin.module' ).then( m => m.AdminModule ) },
+  { path: '', loadChildren: () => import( './modules/site/site.module' ).then( m => m.SiteModule ) },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, routerOptions)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

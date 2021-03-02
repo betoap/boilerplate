@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="224px" height="224px" viewBox="0 0 224 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>@2xIcon / User Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-116.000000, -903.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="800" height="1519"></rect>
+            <g id="Icon-/-Onsite" transform="translate(216.000000, 1003.000000)" stroke="#EE162D" stroke-linecap="round" stroke-linejoin="round">
+                <g id="hourglass-outline-16" transform="translate(5.000000, 4.000000)">
+                    <path d="M11.5,15.5 C11.5,15.5 11.5,14.716 11.5,14.5 C11.5,11.657 10.545,9.11 9,8 C10.545,6.89 11.5,4.343 11.5,1.5 C11.5,1.284 11.5,0.5 11.5,0.5" id="Path"></path>
+                    <path d="M2.5,15.5 C2.5,15.5 2.5,14.716 2.5,14.5 C2.5,11.657 3.455,9.11 5,8 C3.455,6.89 2.5,4.343 2.5,1.5 C2.5,1.284 2.5,0.5 2.5,0.5" id="Path"></path>
+                    <path d="M0.5,0.5 L13.5,0.5" id="Path"></path>
+                    <path d="M0.5,15.5 L13.5,15.5" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

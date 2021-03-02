@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="225px" height="225px" viewBox="0 0 225 225" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>@2xIcon / User Copy 17</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-462.000000, -900.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="800" height="1519"></rect>
+            <g id="Icon-/-Talk-Copy" transform="translate(562.000000, 1000.000000)">
+                <g id="icon-/-small">
+                    <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="25" height="25"></rect>
+                </g>
+                <g id="tree-03-outline-48" transform="translate(7.000000, 6.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon id="Path" stroke-width="0.7" points="12 10.9268293 0 10.9268293 6 0"></polygon>
+                    <path d="M2.47058824,13.6585366 L9.52941176,13.6585366" id="Path" stroke-width="0.7"></path>
+                    <path d="M6,4.56174581 L6,13.6585366" id="Path" stroke-width="0.7"></path>
+                    <path d="M6,10.2439024 L7.76470588,8.53658537" id="Path" stroke-width="0.7"></path>
+                    <path d="M4.23529412,6.82926829 L6,8.53658537" id="Path" stroke-width="0.7"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

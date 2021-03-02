@@ -1,0 +1,26 @@
+@import '../tools/__all';
+.custom-selectbox-wrapper{
+    .modal-wrapper{
+        position: fixed;
+        background-color: $color-black-80 !important;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+
+        .main-content{
+            opacity: 1 !important;
+            position:fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: $color-black !important;
+            width: 55vw;
+            height: 68.5vh;
+            z-index: 999;
+            border: 0px;
+            @include rem(border-radius, 14px);
+        }
+    }
+}

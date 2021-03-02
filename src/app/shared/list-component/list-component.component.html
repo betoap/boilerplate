@@ -1,0 +1,8 @@
+<section class="list">
+  <h4 for="" class="control-label">{{label}}</h4>
+  <ul *ngFor="let item of items; let i = index;" class="list--wrapper">
+    <li (click)="getValue(item.value, i);"[value]="item.value" class="list--item">
+      <a [ngClass]="{'active': selectedIndex == i}" >{{item.label | uppercase}}</a>
+    </li>
+  </ul>
+</section>

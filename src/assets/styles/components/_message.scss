@@ -1,0 +1,45 @@
+@import '../tools/__all';
+
+.message {
+  @include rem(font-size, 12px);
+  @include rem(line-height, 21px);
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+	box-shadow: 0 2px 4px 0 rgba(201, 201, 201, 0.5);
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 21px;
+
+  &.message-warning {
+    background-color: $color-warning;
+  }
+  &.message-success {
+    background-color: $color-success;
+  }
+  &.message-info {
+    background-color: $color-info;
+  }
+  &.message-danger {
+    background-color: $color-error;
+  }
+  &.message-dismissible .close {
+    position: relative;
+    top: -.75rem;
+    right: -1.25rem;
+    padding: .75rem 1.25rem;
+    color: inherit;
+  }
+  .close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none;
+    float: right;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: $color-black;
+    text-shadow: 0 1px 0 $color-white;
+    opacity: .5;
+  }
+}

@@ -1,0 +1,5 @@
+.input-search-box {
+  @include rem(padding, 5px, 0);
+  margin-left: 0;
+  border-bottom: 1px solid $color-white-smoke;
+}

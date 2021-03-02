@@ -1,0 +1,30 @@
+@import '../tools/__all';
+.icon-info-list{
+    .content {
+        @include rem(margin-top, 60px);
+    }
+    .row {
+        @include rem(margin-left, 20px);
+    }
+    .defaulticoncolor {
+        color: $btn-primary-bg-active;
+    }
+    .labelinfo {
+        color: rgba(0, 0, 0, 0.87);
+        font-family: Roboto;
+        @include rem(font-size, 14px);
+        @include rem(line-height, 24px);
+    }
+    hr {
+        @include rem(margin-top, 32px);
+        @include rem(height, 1px);
+        box-sizing: border-box;
+        border-top: 1px solid rgba(0, 0, 0, 0.16);
+    }
+    .spacefromicon {
+        @include rem(margin-left, 29px);
+    }
+    .imagesize {
+        @include rem(width, 24px);
+    }
+}

@@ -1,0 +1,57 @@
+// *----------------------------------*\
+//  Settings > Global
+// *----------------------------------*/
+
+$font-regular: 'Roboto', sans-serif !default;
+$font-medium: 'Roboto Medium', sans-serif !default;
+$font-bold: 'Roboto Bold', sans-serif !default;
+
+$global-transition:                   .4s !default;
+$enable-rounded:                      true !default;
+$enable-shadows:                      false !default;
+$enable-gradients:                    false !default;
+$enable-transitions:                  true !default;
+$fonte-padrao:                        $font-regular, 'Open Sans', sans-serif !default;
+$box-sizing:                          border-box !default;
+$animation-time-default:              .4s !default;
+$animation-mode-default:              both !default;
+$animation-name-default:              fadeout !default;
+$animation-iteration-count-default:   2 !default;
+$animation-direction-default:         alternate !default;
+$animation-delay-default:             s0 !default;
+$animation-transform-origin-default:  top center !default;
+$mask-image-repeat:                   no-repeat;
+$mask-positionX:                      center;
+$mask-positionY:                      center;
+
+//== Modals
+$modal-inner-padding:         20px;
+$modal-title-padding:         15px;
+$modal-content-bg:                             #fff;
+$modal-content-border-color:                   rgba(0,0,0,.2);
+$modal-content-fallback-border-color:          #999;
+$modal-backdrop-bg:           #000;
+$modal-backdrop-opacity:      .5;
+$modal-header-border-color:   #e5e5e5;
+$modal-footer-border-color:   $modal-header-border-color;
+$modal-lg:                    900px;
+$modal-md:                    600px;
+$modal-sm:                    300px;
+$zindex-navbar:            1000;
+$zindex-dropdown:          1000;
+$zindex-popover:           1010;
+$zindex-tooltip:           1030;
+$zindex-navbar-fixed:      1030;
+$zindex-modal-background:  1040;
+$zindex-modal:             1050;
+
+$base-radius: 4px;
+
+// Fonts
+$font-medium: 'Roboto Medium';
+$font-regular: 'Roboto';
+$font-light: 'Roboto Light';
+
+$input-height: 35px;
+
+$show-last-content: 60px;

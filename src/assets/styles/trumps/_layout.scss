@@ -1,0 +1,69 @@
+/*------------------------------------*\
+  Elements > Page
+\*------------------------------------*/
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.bottom-shadow {
+  box-shadow: -1px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.position-relative {
+  position: relative;
+}
+
+.form-group {
+  @include rem(margin-bottom, 15px);
+}
+
+.form-group-2 {
+  @include rem(margin-bottom, 30px);
+}
+
+.mb-6 {
+  @include rem(margin-bottom, 6px);
+}
+
+.protocol-info {
+  @include rem(margin-bottom, 36px);
+  height: 9vh;
+  overflow: hidden;
+
+  .protocol-info__item {
+    @include rem(margin-bottom, 4px);
+    @include rem(font-size, 11px);
+    line-height: 1.4;
+
+    .protocol-info__label {
+      color: $color-grey;
+    }
+  }
+}
+
+.tabContent-padding{
+  @include rem(padding-right, 15px);
+  @include rem(padding-left, 15px);
+  @include rem(padding-left, 15px);
+}

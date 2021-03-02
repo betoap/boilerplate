@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Call</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon-/-Call" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+      <g id="phone-outline-24" transform="translate(4.000000, 4.000000)" fill="white">
+        <path d="M12.1904762,9.9047619 L9.9047619,12.1904762 L3.80952381,6.0952381 L6.0952381,3.80952381 L2.28571429,0 L0,2.28571429 C0,9.85980952 6.14019048,16 13.7142857,16 L16,13.7142857 L12.1904762,9.9047619 Z" id="Shape"></path>
+      </g>
+    </g>
+</svg>

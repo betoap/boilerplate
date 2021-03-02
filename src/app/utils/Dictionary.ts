@@ -4,23 +4,12 @@ export class Dictionary<TKey, TValue> extends Map<TKey, TValue> {
         super(entries);
     }
 
-    getForValue( _value: TValue ) {
+    public getForValue( _value: TValue ): [TKey, TValue] | undefined {
         for ( const item of this ) {
             if( item[1] === _value ) {
                 return item;
             }
         }
+        return undefined;
     }
 }
-
-
-// let e = new Dictionary();
-// e.set('x', 1);
-// e.set('y', 2);
-// e.set('z', 3);
-// console.log(
-//     e.get('a'),
-//     e.getForValue(4)
-// );
-
-

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / User</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon-/-User" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-/-small" fill-rule="nonzero">
+            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+        </g>
+        <g id="single-02-outline-16" transform="translate(5.000000, 5.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8.5,9.55769231 L5.5,9.55769231 C2.73857625,9.55769231 0.5,11.3657731 0.5,13.5961538 L13.5,13.5961538 C13.5,12.5250873 12.9732158,11.4978888 12.0355339,10.7405303 C11.097852,9.98317186 9.82608245,9.55769231 8.5,9.55769231 Z" id="Shape"></path>
+            <circle id="Oval" cx="7" cy="3.5" r="3.5"></circle>
+        </g>
+    </g>
+</svg>

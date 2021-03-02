@@ -1,0 +1,110 @@
+$tabset-padding: 30px;
+
+.tabset {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &.vertical {
+    display: flex;
+    flex-direction: row;
+
+    .tabset__list {
+      @include rem(border-top-right-radius, 10px);
+      @include rem(border-bottom-right-radius, 10px);
+      border-top: 1px solid $color-black;
+      border-right: 1px solid $color-black;
+
+      flex-direction: column;
+      background-color: $color-gallery;
+
+      .tabset__item {
+        margin: 0;
+        border-radius: 0;
+        color: $color-grey;
+        @include rem(border-top-right-radius, 10px);
+        @include rem(width, 70px);
+        @include rem(height, 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        transition: background-color .35s;
+        border-color: transparent;
+
+        &:not(.active) {
+          &:hover {
+            background-color: lighten($color-gallery, 4%);
+          }
+        }
+
+        &.active {
+          border-top: 1px solid $color-black;
+          border-bottom: 1px solid $color-black;
+          border-right: 1px solid $color-black;
+          border-left: 3px solid $color-red;
+          background-color: $color-white;
+        }
+
+        &:first-child {
+          border-top: none;
+        }
+      }
+    }
+
+    .tabset__content {
+      flex: 1;
+      border: none;
+      padding: 0;
+    }
+  }
+}
+
+.tabset {
+  &:not(.vertical) {
+    .tabset__item {
+      margin-bottom: -1px;
+
+      &.active {
+        border-bottom: 1px solid $color-white;
+      }
+    }
+  }
+}
+
+.tabset__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  // border-bottom: 1px solid $color-gallery;
+}
+
+.tabset__item {
+  @include rem(padding, 12px, $tabset-padding);
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid $color-black;
+  border-bottom: none;
+  color: lightgray;
+  @include rem( border-top-left-radius, 8px );
+  @include rem( border-top-right-radius, 8px );
+  @include rem( margin-right, 5px );
+
+  &.active {
+    background-color: $color-white;
+    color: black;
+  }
+}
+
+.tabset__content {
+  @include rem(padding-top, 15px);
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  position: relative;
+  top: -1px;
+  border: 1px solid $color-black;
+  @include rem( border-top-right-radius, 8px );
+  background-color: $color-white;
+}

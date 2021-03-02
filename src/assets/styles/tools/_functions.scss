@@ -1,0 +1,33 @@
+@import './../settings/__all';
+// *----------------------------------*\
+// Tools > Functions
+// *----------------------------------*/
+
+@function half($n) {
+  @return round($n / 2);
+}
+
+@function quarter($n) {
+  @return round($n / 4);
+}
+
+@function double($n) {
+  @return round($n * 2);
+}
+
+@function quadruple($n) {
+  @return round($n * 4);
+}
+
+@function rem( $value, $context: $font-size-base ){
+  @return ($value / $context) * 1rem;
+}
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function convertPixelToRem( $sizeValue ) {
+  @return $sizeValue / $font-size-base;
+}
+

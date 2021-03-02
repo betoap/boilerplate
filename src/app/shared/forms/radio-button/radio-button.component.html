@@ -1,0 +1,27 @@
+<section >
+  <div class="radio-button" id="{{ id }}">
+    <ng-container *ngFor="let input of items; let i = index;" >
+
+      <div class="label-container {{ ( input.checked ) ? 'active' : ''}}" >
+          <input
+            type="radio"
+            id="{{ id }}_{{ i }}"
+            name="{{ id }}"
+            value="{{ input.value }}"
+            (click)="setAsChecked(i)"
+            [checked] = "input.checked"
+          >
+
+          <div class="hovered-bg" (click)="setAsChecked(i)">
+              <div class="checkmark">
+                  <div class="checkmark-checked"></div>
+              </div>
+          </div>
+
+          <label for="{{ id }}_{{ i }}">{{ input.label }}</label>
+      </div>
+    </ng-container>
+  </div>
+
+  <am-error-msg [control]="control" [label]="label"></am-error-msg>
+</section>

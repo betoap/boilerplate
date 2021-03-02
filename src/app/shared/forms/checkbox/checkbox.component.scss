@@ -1,0 +1,80 @@
+@import './../../../../assets/styles/tools/_all';
+
+label{
+  cursor: pointer;
+  font-family: $font-default;
+  font-size: 16px;
+  @include rem(letter-spacing, 0.8px);
+  @include rem(line-height, 26px);
+  @include rem(margin-left, 2px);
+  @include rem(margin-top, 8px);
+}
+
+
+
+.answer-selector input {
+  margin: 0;
+  padding: 0;
+  display: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.yes {
+  background-image: url(./../../../../assets/img/Checkbox_Off.svg);
+  @include rem(margin, 12px);
+}
+
+.answer-selector input:active + .label-image {
+  opacity: 0.9;
+}
+
+.answer-selector input:checked + .label-image {
+  background-image: url(./../../../../assets/img/Checkbox_On.svg);
+  @include rem(margin, 12px);
+  #Line-4 {
+    fill: white;
+    stroke: white;
+  }
+  #Line-5 {
+    fill: white;
+    stroke: white;
+  }
+  #Stroke-1 {
+    fill: white;
+    stroke: white;
+  }
+  #Stroke-3 {
+    fill: white;
+    stroke: white;
+  }
+}
+
+.label-image {
+  @include rem(height, 16px);
+  @include rem(width, 16px);
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.boxcheck {
+  @include rem(height, 41px);
+  @include rem(width, 41px);
+  @include rem(border-radius, 50px);
+}
+
+.boxcheck:hover {
+  @include rem(height, 41px);
+  @include rem(width, 41px);
+  @include rem(border-radius, 50px);
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+
+
+.row {
+  @include rem(margin-top, 41px);
+}

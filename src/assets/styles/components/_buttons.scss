@@ -1,0 +1,181 @@
+@import '../tools/__all';
+/*------------------------------------*\
+  Components > Buttons
+\*------------------------------------*/
+
+.svgIcon {
+  fill: #fff;
+  stroke: none;
+}
+
+.svgIcon #Falta-de-Energia{
+  fill: #fff;
+  stroke: none;
+}
+
+.svgIcon:checked #Falta-de-Energia{
+  fill: #fff;
+  stroke: none;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box; // padding: half($base-spacing-unit) double($base-spacing-unit);
+    cursor: pointer;
+    transition: $global-transition;
+    text-align: center;
+    vertical-align: middle;
+    // white-space: nowrap;
+    outline: none;
+    border: 0;
+    @include rem(border-radius, 8px);
+    @include rem(font-size, $font-size-medium);
+    @include attention() {
+      text-decoration: none;
+    }
+
+    &-icon {
+      background: transparent;
+      color: $color-black-60;
+      i {
+        @include rem( margin-bottom, 12px );
+      }
+      &:disabled {
+        background: none;
+        opacity: 0.5;
+        cursor: default;
+      }
+    }
+
+    &-sm--primary,
+    &-sm--secondary,
+    &-sm--secondary:active,
+    &-sm--secondary__active {
+      @include rem( padding, 5px, 15px );
+      color: white;
+      @include rem( border-radius, 5px );
+      background-color: $btn-primary-bg-active;
+    }
+
+    &-sm--secondary {
+      @include rem(font-size, 12px);
+
+      &:active,
+      &__active {
+        background-color: $btn-secondary-bg-active;
+        border: 1px solid $color-black;
+        &:hover {
+            background-color: $btn-secondary-bg-hover;
+            border: 1px solid #333;
+        }
+      }
+    }
+
+    &--full-width {
+      width: 100%;
+    }
+
+    &--primary {
+        @include rem(padding, 18px, 46px, 18px, 46px);
+        @include rem(font-size, 12px);
+        @include rem(letter-spacing, 0.43px);
+        @include rem(line-height, 16px);
+        color: #AFAFAF;
+        background-color: $color-white;
+        border: #AFAFAF 1px solid;
+        text-transform: uppercase;
+        text-align: center;
+        @include attention() {
+            color: #7F7F7F;
+            background-color: $color-white;
+            border: #7F7F7F 1px solid;
+        }
+        &:active,
+        &:enabled,
+        &__active {
+            @include rem(padding, 18px, 46px, 18px, 46px);
+            @include rem(font-size, 12px);
+            @include rem(letter-spacing, 0.43px);
+            @include rem(line-height, 16px);
+            color: white;
+            background-color: $btn-primary-bg-active;
+            // background-color: $btn-primary-bg-disabled;
+            border: none;
+            text-transform: uppercase;
+            text-align: center;
+            @include attention() {
+                color: white;
+                background-color: $btn-primary-bg-hover;
+                border: none;
+            }
+        }
+        &:disabled {
+            @include rem(padding, 18px, 46px, 18px, 46px);
+            @include rem(font-size, 12px);
+            @include rem(letter-spacing, 0.43px);
+            @include rem(line-height, 16px);
+
+            color: #c0c0c0;
+            background-color: $btn-primary-bg-disabled;
+            border: none;
+            text-transform: uppercase;
+            text-align: center;
+            opacity: 0.5;
+        }
+    }
+    &--secondary,
+    &--secondary:hover,
+    &--secondary:active,
+    &--secondary__active,
+    &--secondary__disabled {
+        @include rem(padding, 18px, 0);
+        @include rem(border-radius, 8px);
+        @include rem(letter-spacing, 0.5px);
+        @include rem(font-size, 12px);
+        @include rem(line-height, 17px);
+        width: 100%;
+        background-color: #FFF;
+        text-align: center;
+    }
+
+    &--secondary {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        color: #999; // @include attention() {
+        //   color: #7F7F7F;
+        //   background-color: #FFFFFF;
+        //   border: #7F7F7F 1px solid;
+        // }
+        &:hover:not(:disabled) {
+            border: 1px solid $color-black-60;
+            color: #666;
+        }
+        &:active,
+        &__active {
+            background-color: $btn-secondary-bg-active;
+            color: #FFF;
+            border: 1px solid $color-black;
+            &:hover {
+                background-color: $btn-secondary-bg-hover;
+                border: 1px solid #333;
+            } // @include attention() {
+            //   color: white;
+            //   background-color: #333333;
+            //   border: none;
+            // }
+        }
+        &__disabled {
+            background-color: $btn-secondary-bg-disabled;
+            border: 1px solid #e5e5e5;
+            cursor: default;
+            color: $color-black-20; //   @include attention() {
+            //     background-color: #E5E5E5;
+            //     border: none;
+            //   }
+        }
+
+        &:disabled {
+          opacity: 0.5;
+          cursor: default;
+        }
+    } // &--full { width: 100%; }
+}

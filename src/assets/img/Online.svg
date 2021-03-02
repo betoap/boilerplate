@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="224px" viewBox="0 0 223 224" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>@2xIcon / mais Copy 5</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icones" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-577.000000, -385.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="800" height="1519"></rect>
+            <g id="Icon-/-Laptop" transform="translate(677.000000, 485.000000)" stroke="#000000" stroke-linejoin="round">
+                <g id="laptop-1-outline-64" transform="translate(5.000000, 6.000000)">
+                    <path d="M0.875,8 L0.875,1 C0.875,0.44775 1.33207813,0 1.89583333,0 L12.1041667,0 C12.6679219,0 13.125,0.44775 13.125,1 L13.125,8" id="Shape" stroke-width="0.897435897"></path>
+                    <path d="M6.5625,2 L7.875,2" id="Shape" stroke-width="0.897435897"></path>
+                    <path d="M8.86666667,10 L5.13333333,10 L0,10 C0,11.1045 0.8358,12 1.86666667,12 L12.1333333,12 C13.1642,12 14,11.1045 14,10 L8.86666667,10 Z" id="Shape" stroke-width="0.897435897"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

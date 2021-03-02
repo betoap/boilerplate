@@ -1,0 +1,19 @@
+<section [formGroup]="formGroup">
+  <am-input-field
+    [type]="'text'"
+    [classeCss]="class"
+    [label]="label"
+    [placeholder]="placeholder"
+    [control]="control"
+    [formControlName]="controlName"
+    (changed)="getInputValue($event);"
+    (focusout)="onFocusMethod($event)"
+    (focus)="onBlurMethod($event)"
+    [restrictTo]="'noSpaceOnInit'"
+    #searchBar
+  ></am-input-field>
+  <ul class="select__list">
+    <li *ngFor="let item of collection" (click)="setValue(item)" >{{ item.options }}</li>
+  </ul>
+</section>
+

@@ -1,0 +1,84 @@
+.upload {
+  @include rem(padding, 20px);
+  display: block;
+  border-radius: $base-radius;
+  border: 1px solid $color-gallery;
+
+  &.error {
+    border-color: $color-error;
+  }
+}
+
+.upload__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload__content {
+  @include rem(margin-top, 15px);
+}
+
+.upload__title {
+  @include rem(font-size, 17px);
+  font-family: $font-regular;
+  margin: 0;
+}
+
+.upload__attach-trigger {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.upload--icon {
+  @include rem(width, 20px);
+  @include rem(height, 20px);
+
+  svg {
+    @include rem(width, 20px);
+    @include rem(height, 20px);
+  }
+}
+
+.upload__attach-trigger-icon {
+  svg {
+    * {
+      fill: $color-info;
+    }
+  }
+}
+
+.upload__trash-icon {
+  svg {
+    * {
+      fill: $color-black;
+    }
+  }
+}
+
+.upload__attach-trigger-text {
+  @include rem(font-size, 13px);
+  @include rem(margin-left, 5px);
+  color: $color-info;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.upload__file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload__small-text {
+  @include rem(font-size, 13px);
+}
+
+.upload__error-text {
+  color: $color-error;
+}
+
+.upload__input-file {
+  display: none;
+}

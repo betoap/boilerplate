@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon / Regras</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icon-/-Regras" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="single-content-02-outline-16" transform="translate(6.000000, 5.000000)" stroke="#000000">
+            <polygon id="Shape" points="6.8 13.4782609 0.4 13.4782609 0.4 0.434782609 10.8 0.434782609 10.8 9.13043478"></polygon>
+            <polyline id="Shape" points="6.8 13.4782609 6.8 9.13043478 10.8 9.13043478"></polyline>
+        </g>
+    </g>
+</svg>

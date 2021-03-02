@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>E80B83F0-60DA-404F-93DD-F2306649265F-39939-00032EC9A7F005FE</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Religa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="4-—-Religa" transform="translate(-1113.000000, -40.000000)">
+            <g id="Modal" transform="translate(398.000000, -2.000000)">
+                <g id="Header/-Normal" transform="translate(1.000000, 2.000000)">
+                    <g id="Header">
+                        <g id="Icon-/-Close" transform="translate(707.000000, 32.000000)">
+                            <g id="icon-/-small" fill-rule="nonzero">
+                                <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+                            </g>
+                            <g id="simple-remove-outline-64" transform="translate(8.000000, 8.000000)" stroke="#9E0616" stroke-linecap="square" stroke-width="0.923076923">
+                                <path d="M16,0 L0,16" id="Shape"></path>
+                                <path d="M16,16 L0,0" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
