@@ -1,0 +1,32 @@
+{
+  "workbench.colorTheme": "Dracula",
+
+  // Configura tamanho e família da fonte
+  "editor.fontSize": 18,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+
+  // Aplica linhas verticais para lembrar de quebrar linha em códigos muito grandes
+  "editor.rulers": [80, 120],
+  "editor.formatOnSave": false,
+
+   // Aumenta a fonte do terminal
+   "terminal.integrated.fontSize": 14,
+
+   // Define o tema dos ícones na sidebar
+   "workbench.iconTheme": "material-icon-theme",
+   "workbench.startupEditor": "newUntitledFile",
+   "editor.tabSize": 2,
+   "window.zoomLevel": 1,
+  "extensions.ignoreRecommendations": true,
+  "code-runner.runInTerminal": true,
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+  "debug.onTaskErrors": "debugAnyway",
+  "angular.experimental-ivy": true,
+  "explorer.confirmDelete": false,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.editorAssociations": {
+    "*.dat": "default"
+  },
+}
